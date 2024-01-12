@@ -14,7 +14,6 @@ def _parse_args():
     parser.add_argument('--filepath', type=str, default='/opt/ml/processing/input/')
     parser.add_argument('--filename', type=str, default='Placement.csv')
     parser.add_argument('--outputpath', type=str, default='/opt/ml/processing/output/')
-    parser.add_argument('--categorical_features', type=str, default='gender,ssc_b,hsc_b,hsc_s,degree_t,workex,specialisation,status')
 
     return parser.parse_known_args()
 
