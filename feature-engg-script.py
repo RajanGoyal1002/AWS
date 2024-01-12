@@ -20,7 +20,7 @@ def _parse_args():
 
 if __name__=="__main__":
     args, _ = _parse_args()
-    
+    df = pd.read_csv(os.path.join(args.filepath, args.filename))
     df.drop(['sl_no'],axis=1,inplace=True)
     df.isnull().sum()
     df["gender"].value_counts()
